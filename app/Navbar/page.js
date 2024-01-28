@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { MdCloseFullscreen } from "react-icons/md";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -67,6 +68,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
     </>
   );
 };

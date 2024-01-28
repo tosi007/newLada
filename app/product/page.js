@@ -2,13 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import {
-    TEDropdown,
-    TEDropdownToggle,
-    TEDropdownMenu,
-    TEDropdownItem,
-    TERipple,
-  } from "tw-elements-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { RiArrowGoBackFill } from "react-icons/ri";
 const Page = () => {
   const [pic1, setPic1] = useState('');
   const [pic2, setPic2] = useState('');
@@ -36,7 +31,7 @@ const Page = () => {
       Date: '2024-01-27T03:51:10.272+00:00',
       __v: 0,
     };
-
+   
     // Check if Pic1 is available and update the state
     if (data.Pic1) {
       setPic1(data.Pic1);
@@ -60,7 +55,7 @@ const Page = () => {
   };
 
   return (<>
-     
+    <Link href="/"> <RiArrowGoBackFill className='text-3xl text-white absolute top-6 left-0'/> </Link>
       <div className="justify-between bg-black flex">
         <div className="w-2/4 h-[0.1rem] mt-5 rounded-lg bg-[#D7D7DD]"></div>
         <div className="mt-2 text-center">
@@ -81,7 +76,7 @@ const Page = () => {
         <div className="w-2/4 h-[0.1rem] mt-5 rounded-lg bg-[#D7D7DD]"></div>
       </div>
 
-<div className='flex flex-row'>
+<div className='flex flex-col md:flex-row'>
 
 
 
@@ -90,69 +85,15 @@ const Page = () => {
         <Image className="mx-5 " onClick={() => setCurrentImage(pic2)} src={pic2} width={50} height={100} alt='as' />
         <Image className="mx-5 " onClick={() => setCurrentImage(pic3)} src={pic3} width={50} height={100} alt='as' />
      
-    
+              </div>
       </div>
 
-    <div><h1 className='text-white text-3xl'>sjs</h1></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
+    <div><br className='text-white'/><h1 className='text-white my-auto md:mt-36 text-3xl'>Eternal Embrace</h1><p className='text-gray-500 mt-3 text-lg'>Infinite love captured in a timeless, intertwined pendant. Radiant romance</p><p className='text-white mt-5 text-2xl'>Rs 50,000</p><div className='w-56 mt-3 rounded-lg h-10 flex flex-row bg-green-600'><div className='my-1 mx-1'><h1 className='text-3xl text-yellow-50'><FaWhatsapp/></h1></div><div className='my-[0.4rem]'><p className='text-white'>Contact on Whatsapp</p></div></div></div>
 
 
 
     </div>
-    <div className="relative inline-block text-left">
-      <button
-        onClick={toggleDropdown}
-        type="button"
-        className="text-black bg-white  focus:ring-4 focus:outline-none focus:ring-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Dropdown button
-        <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
-        </svg>
-      </button>
-
-      {/* Dropdown menu */}
-      {isOpen && (
-        <div className="z-10 absolute left-0 mt-2 w-44 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
-          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <Link href="/admin" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                Settings
-              </Link>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                Earnings
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                Sign out
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
-    </div>
-    
+  
     </>
   );
 };
