@@ -76,7 +76,7 @@ const Page = () => {
         <div className="w-2/4 h-[0.1rem] mt-5 rounded-lg bg-[#D7D7DD]"></div>
       </div>
 
-<div className='flex flex-col md:flex-row'>
+<div className='flex flex-col  lg:flex-row'>
 
 
 

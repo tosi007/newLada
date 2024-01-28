@@ -6,6 +6,86 @@ const Page = ({params}) => {
 const id = params.slug[1]
 const [data, setData] =useState("")
  
+
+
+
+
+
+const [image3, setImage3] = useState('');
+const [image2, setImage2] = useState('');
+const [url2, setUrl2] = useState("")
+const [url3, setUrl3] = useState("")
+const postDetails2=async()=>{
+      const data = new FormData()
+      data.append("file",image2)
+      data.append("upload_preset","Lada_shop")
+      data.append('cloud_name',"djjcs8pla")
+     await fetch("https://api.cloudinary.com/v1_1/djjcs8pla/image/upload",{
+          method:"post",
+          body:data
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        setUrl2(data.url)
+         toast.success('Image Uploaded', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+
+      })
+      .catch(err=>{
+          console.log(err)
+      })
+    }
+
+
+    const postDetails3=async()=>{
+      const data = new FormData()
+      data.append("file",image3)
+      data.append("upload_preset","Lada_shop")
+      data.append('cloud_name',"djjcs8pla")
+     await fetch("https://api.cloudinary.com/v1_1/djjcs8pla/image/upload",{
+          method:"post",
+          body:data
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        setUrl3(data.url)
+         toast.success('Image Uploaded', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+
+      })
+      .catch(err=>{
+          console.log(err)
+      })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 const postDetails=async()=>{
     const data = new FormData()
     data.append("file",image)
@@ -90,7 +170,15 @@ const handleStateChange = (e) => {
     }
   
     if (url !== undefined) {
-      requestBody.Pic = urencodeURIComponent(url);
+      requestBody.Pic = url;
+    }
+ 
+    if (url2 !== undefined) {
+      requestBody.Pic2 = url2;
+    }
+ 
+    if (url3 !== undefined) {
+      requestBody.Pic3 = url3;
     }
     console.log('Request Body:', requestBody);
     const res = await fetch(`http://localhost:5000/api/product/update/${id}`, {
@@ -103,15 +191,7 @@ const handleStateChange = (e) => {
   
 
   };
-  const handleSubmits = async () => {
-    const res = await fetch(`http://localhost:5000/api/product/update/${id}`, {
-        method: "PUT",
-        body: JSON.stringify({Pic: url}),
-     
-      });
-      const json = await res.json();
-   console.log(json);
-  }
+
 
 
   return (
@@ -166,7 +246,10 @@ const handleStateChange = (e) => {
 
 <div className="flex flex-col">
  <h1  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '30px' }} className='text-white text-center mt-2'>Add Your Product</h1>
-       <div className="w-full md:w-1/5 px-3">
+    
+
+
+        <div className="w-full md:w-1/5 px-3">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
          Upload Image
           </label>
@@ -177,8 +260,39 @@ const handleStateChange = (e) => {
             
             onChange={(e)=>{setImage(e.target.files[0])}}
           />
-<button className="text-white border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails()}>upload</button><button className="text-white border border-white my-5 w-20 rounded-lg" onClick={handleSubmits}>upload</button>
+<button className="text-white border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails()}>upload</button>
         </div>
+
+
+        <div className="w-full md:w-1/5 px-3">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+         Upload Second Image
+          </label>
+          <input
+            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+           
+            type="File"
+            
+            onChange={(e)=>{setImage2(e.target.files[0])}}
+          />
+<button className="text-white border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails2()}>upload</button>
+        </div>
+
+        <div className="w-full md:w-1/5 px-3">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+         Upload third Image
+          </label>
+          <input
+            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+           
+            type="File"
+            
+            onChange={(e)=>{setImage3(e.target.files[0])}}
+          />
+<button className="text-white border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails3()}>upload</button>
+        </div>
+
+
 <form className="w-full ml-3 max-w-lg" onSubmit={handleSubmit}>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
