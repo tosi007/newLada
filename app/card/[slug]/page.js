@@ -89,7 +89,7 @@ const Page = ({params}) => {
               </div>
       </div>
 
-    <div><br className='text-white'/><h1 className='text-white my-auto md:mt-36 text-3xl'>{data.name}</h1><p className='text-gray-500 mt-3 text-lg'>{data.Description}</p><p className='text-white mt-5 text-2xl'>Rs {data.Price}</p><div className='w-56 mt-3 rounded-lg h-10 flex flex-row bg-green-600'><div className='my-1 mx-1'><h1 className='text-3xl text-yellow-50'><FaWhatsapp/></h1></div><div className='my-[0.4rem]'><p className='text-white'>Contact on Whatsapp</p></div></div></div>
+    <div className='ml-3'><br className='text-white'/><h1  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '35px' }} className='text-white my-auto md:mt-36 text-3xl'>{data.name}</h1><p  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '20px' }} className='text-gray-500 mt-3 text-lg'>{data.Description}</p><p  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '20px' }} className='text-white mt-5 text-2xl'>Rs {data.Price}</p><div className='w-56 mt-3 rounded-lg h-10 flex flex-row bg-green-600'><div className='my-1 mx-1'><h1 className='text-3xl text-yellow-50'><FaWhatsapp/></h1></div><div className='my-[0.4rem]'><p  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '18px' }} className='text-white'>Contact on Whatsapp</p></div></div></div>
 
 
 
