@@ -1,0 +1,25 @@
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .flipContainer {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .myRotateY180 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Add any other styles you need */
+  

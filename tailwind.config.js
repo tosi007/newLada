@@ -1,3 +1,21 @@
+const plugin = require("tailwindcss/plugin");
+
+const Myclass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".my-rotate-y-180": {
+      transform: "rotateY(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "1000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+}); 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,9 +31,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        'grid': '450px',
+        'grid': '624px',
         // => @media (min-width: 640px) { ... }
-  
+        'gridd': '966px',
         'laptop': '1024px',
         // => @media (min-width: 1024px) { ... }
   
@@ -25,5 +43,5 @@ module.exports = {
   
     },
   },
-  plugins: [],
+  plugins: [Myclass],
 };

@@ -164,24 +164,38 @@ const Card = React.forwardRef((props, ref) => {
           )}
         </div>
 
-        <div className="grid grid-cols-1 grid:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid ml-3 grid-cols-1 grid:grid-cols-2 gridd:grid-cols-3 xl:grid-cols-4 gap-4">
           {Array.isArray(data) ? (
             data.map((item) => (
-              <div key={item._id} className="w-fit mx-2 bg-black border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <Link href={`/card/${item._id}`}>
-                  <Image className="rounded-t-lg md:w-[250px] text-center hover:transition-transform hover:transform hover:ease-out duration-300 " width={200} height={10} objectFit='cover' src={item.Pic} alt="" />
-                  </Link>
-                <div className="p-5">
-                <Link href={`/card/${item._id}`}>
-                    <h5 style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '30px' }} className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">{item.name}</h5>
-                    </Link>
-                  <p style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '20px' }} className="mb-3 font-normal text-gray-400 dark:text-gray-400">{item.Description}</p>
-                  <h5 style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '25px' }} className="mb-2 text-lg font-bold tracking-tight text-white dark:text-white">PKR.{item.Price}</h5>
-                  <Link href={`/card/${item._id}`} style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '17px' }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    View Product
-                  </Link>
+                <div key={item._id}
+                className="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
+                >
+                <div
+                  className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
+                >
+                  <div className="absolute backface-hidden border-2 w-full h-full">
+                    <Image src={item.Pic} alt='' width={200} height={200} className="w-full h-full" />
+                  </div>
+                  <div
+                    className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden"
+                  >
+                    <div
+                      className="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24"
+                    >
+                      <h1 className="text-3xl font-semibold">{item.name}</h1>
+                      <p className="my-2">{item.Description}</p>
+                      <p>
+                        PKR.{item.Price}
+                      </p>
+                      <Link href={`/card/${item._id}`}>  <button
+                        className="bg-teal-500 px-3 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
+                      >
+                       View Product
+                      </button></Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                </div>
             ))
           ) : (
             <p>Data is not an array</p>
@@ -193,3 +207,24 @@ const Card = React.forwardRef((props, ref) => {
 });
 Card.displayName = 'Card';
 export default Card;
+
+
+
+ {/* <div key={item._id} className="w-fit mx-2 bg-black border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <Link href={`/card/${item._id}`}>
+                  <Image className="rounded-t-lg md:w-[250px] text-center hover:transition-transform hover:transform hover:ease-out duration-300 " width={200} height={10} objectFit='cover' src={item.Pic} alt="" />
+                  </Link>
+                <div className="p-5">
+                <Link href={`/card/${item._id}`}>
+                    <h5 style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '30px' }} className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">{item.name}</h5>
+                    </Link>
+                  <p style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '20px' }} className="mb-3 font-normal text-gray-400 dark:text-gray-400">{item.Description}</p>
+                  <h5 style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '25px' }} className="mb-2 text-lg font-bold tracking-tight text-white dark:text-white">PKR.{item.Price}</h5>
+                  <Link href={`/card/${item._id}`} style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '17px' }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    View Product
+                  </Link> 
+                </div>
+            </div>*/
+        
+        
+        }

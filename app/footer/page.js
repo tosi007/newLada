@@ -1,36 +1,213 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-
-
-<footer className="bg-black rounded-lg shadow dark:bg-gray-900 m-4">
-<hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-      <h1  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '45px' }} className='text-4xl text-white'>Lada Jewelers</h1>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#"  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '18px' }} className="hover:underline me-4 md:me-6">About</a>
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="md:flex md:justify-between">
+          <div className="mb-6 md:mb-0">
+            <svg
+              width="70"
+              height="40"
+              viewBox="0 0 200 124.85486590026754"
+              className="looka-1j8o68f"
+            >
+              <defs id="SvgjsDefs1151"></defs>
+              <g
+                id="SvgjsG1152"
+                featurekey="X3o6dM-0"
+                transform="matrix(6.829667095935116,0,0,6.829667095935116,-1.0927385693272018,-53.81778401084018)"
+                fill="#000000"
+              >
+                <path d="M14.64 21.4 q0.24 0.04 0.54 0.13 t0.57 0.24 t0.46 0.36 t0.19 0.49 q0 0.26 -0.19 0.38 t-0.46 0.17 t-0.57 0.04 t-0.52 -0.01 l-5.36 0 t-3.64 0.01 t-2.25 0.01 t-1.22 0.01 t-0.53 0.01 l-0.18 0 q-0.5 0 -0.91 -0.14 t-0.41 -0.44 q0 -0.26 0.2 -0.39 t0.51 -0.19 t0.67 -0.06 l0.66 0 q0.98 0 1.92 -0.06 t1.9 -0.16 q-0.16 -1.04 -0.22 -2.5 t-0.06 -2.99 t0.03 -2.96 t0.07 -2.41 q0 -0.62 0.03 -1.17 t0.09 -0.97 t0.16 -0.67 t0.26 -0.25 q0.32 0 0.55 0.2 t0.39 0.5 t0.23 0.64 t0.05 0.6 q-0.06 1.92 -0.11 3.37 t-0.1 2.53 t-0.08 1.83 t-0.03 1.23 q-0.02 0.3 -0.06 0.68 t-0.1 0.78 t-0.14 0.79 t-0.2 0.69 q0.92 -0.08 1.87 -0.18 t1.93 -0.17 t1.99 -0.07 t2.07 0.1 z M13.799999999999999 14.54 q0.28 0.06 0.49 0.26 t0.35 0.44 q0.16 -0.18 0.4 -0.2 t0.46 0.07 t0.36 0.28 t0.1 0.45 q-0.08 0.36 -0.15 0.9 t-0.09 1.04 t0.03 0.86 t0.21 0.36 q0.12 0 0.29 -0.31 t0.34 -0.73 t0.31 -0.84 t0.18 -0.64 q0.06 -0.2 0.2 -0.27 t0.27 -0.04 t0.22 0.15 t0.03 0.3 q-0.04 0.12 -0.13 0.45 t-0.23 0.73 t-0.33 0.83 t-0.44 0.76 t-0.56 0.51 t-0.67 0.08 q-0.58 -0.16 -0.84 -0.7 q-0.16 0.48 -0.44 0.87 t-0.72 0.57 q-0.42 0.14 -0.74 0.06 q-0.58 -0.16 -0.92 -0.72 t-0.46 -1.3 t-0.02 -1.54 t0.41 -1.44 t0.83 -1.01 t1.26 -0.23 z M14.32 16.56 q-0.04 -0.34 -0.15 -0.66 t-0.33 -0.36 q-0.32 -0.06 -0.57 0.23 t-0.41 0.77 t-0.23 1.05 t-0.04 1.08 t0.16 0.87 t0.39 0.4 t0.49 -0.28 t0.4 -0.82 t0.26 -1.11 t0.03 -1.17 z M20.479999999999997 11.38 q0 -0.48 0.26 -0.67 t0.56 -0.17 t0.53 0.22 t0.17 0.52 q-0.04 0.24 -0.12 0.91 t-0.17 1.55 t-0.15 1.82 t-0.06 1.74 t0.07 1.31 t0.27 0.51 q0.18 0 0.37 -0.34 t0.37 -0.79 t0.31 -0.88 t0.17 -0.63 q0.06 -0.2 0.19 -0.27 t0.26 -0.04 t0.22 0.15 t0.05 0.32 t-0.18 0.78 t-0.42 1.19 t-0.73 1.09 t-1.07 0.48 q-0.46 0 -0.71 -0.37 t-0.39 -0.97 q-0.16 0.38 -0.43 0.68 t-0.67 0.44 q-0.44 0.16 -0.76 0.04 q-0.58 -0.14 -0.92 -0.63 t-0.47 -1.14 t-0.03 -1.35 t0.41 -1.26 t0.83 -0.87 t1.26 -0.19 q0.4 0.06 0.7 0.42 q0.08 -1.14 0.18 -2.12 t0.1 -1.48 z M20.02 16.32 q-0.04 -0.28 -0.15 -0.56 t-0.33 -0.32 q-0.32 -0.06 -0.57 0.2 t-0.41 0.67 t-0.23 0.91 t-0.04 0.95 t0.17 0.76 t0.4 0.35 t0.49 -0.24 t0.4 -0.72 t0.25 -0.98 t0.02 -1.02 z M25.419999999999998 14.54 q0.28 0.06 0.49 0.26 t0.35 0.44 q0.16 -0.18 0.4 -0.2 t0.46 0.07 t0.36 0.28 t0.1 0.45 q-0.08 0.36 -0.15 0.9 t-0.09 1.04 t0.03 0.86 t0.21 0.36 q0.12 0 0.29 -0.31 t0.34 -0.73 t0.31 -0.84 t0.18 -0.64 q0.06 -0.2 0.2 -0.27 t0.27 -0.04 t0.22 0.15 t0.03 0.3 q-0.04 0.12 -0.13 0.45 t-0.23 0.73 t-0.33 0.83 t-0.44 0.76 t-0.56 0.51 t-0.67 0.08 q-0.58 -0.16 -0.84 -0.7 q-0.16 0.48 -0.44 0.87 t-0.72 0.57 q-0.42 0.14 -0.74 0.06 q-0.58 -0.16 -0.92 -0.72 t-0.46 -1.3 t-0.02 -1.54 t0.41 -1.44 t0.83 -1.01 t1.26 -0.23 z M25.939999999999998 16.56 q-0.04 -0.34 -0.15 -0.66 t-0.33 -0.36 q-0.32 -0.06 -0.57 0.23 t-0.41 0.77 t-0.23 1.05 t-0.04 1.08 t0.16 0.87 t0.39 0.4 t0.49 -0.28 t0.4 -0.82 t0.26 -1.11 t0.03 -1.17 z"></path>
+              </g>
+              <g
+                id="SvgjsG1153"
+                featurekey="RFbU7s-0"
+                transform="matrix(0.7909202748295893,0,0,0.7909202748295893,19.699450511477508,108.9415493069295)"
+                fill="#000000"
+              >
+                <path d="M3.66 7.76 l3 0 l0 7.24 c0 3.14 -2.44 5.1 -5.4 5.1 c-0.22 0 -0.4 0 -0.5 -0.02 s-0.24 -0.06 -0.38 -0.08 l0 -2.78 c0.26 0.06 0.54 0.1 0.8 0.1 c1.54 0 2.48 -0.72 2.48 -2.32 l0 -7.24 z M21.532000000000004 7.76 l9.1 0 l0 2.78 l-6.1 0 l0 1.96 l4.9 0 l0 2.78 l-4.9 0 l0 1.94 l6.1 0 l0 2.78 l-9.1 0 l0 -12.24 z M57.844 7.76 l2.92 0 l-2.26 12.24 l-4.44 0 l-1.6 -7.14 l-1.7 7.14 l-4.68 0 l-1.98 -12.24 l3.06 0 l1.38 9.16 l1.8 -7.14 l4.26 0 l1.72 7.14 z M74.816 7.76 l9.1 0 l0 2.78 l-6.1 0 l0 1.96 l4.9 0 l0 2.78 l-4.9 0 l0 1.94 l6.1 0 l0 2.78 l-9.1 0 l0 -12.24 z M107.468 17.22 l0 2.78 l-9.1 0 l0 -12.24 l3 0 l0 9.46 l6.1 0 z M130.84 17.22 l0 2.78 l-9.1 0 l0 -12.24 l3 0 l0 9.46 l6.1 0 z M145.112 7.76 l9.1 0 l0 2.78 l-6.1 0 l0 1.96 l4.9 0 l0 2.78 l-4.9 0 l0 1.94 l6.1 0 l0 2.78 l-9.1 0 l0 -12.24 z M171.664 10.58 l0 2.92 l2.8 0 c0.92 0 1.46 -0.54 1.46 -1.46 s-0.54 -1.46 -1.46 -1.46 l-2.8 0 z M176.204 15.48 c0.56 0.76 1.12 1.52 1.7 2.26 c0.56 0.74 1.12 1.5 1.68 2.26 l-3.66 0 c-0.72 -0.96 -1.42 -1.92 -2.12 -2.88 c-0.7 -0.94 -1.42 -1.9 -2.14 -2.86 l0 5.74 l-3 0 l0 -12.24 l5.8 0 c2.28 0 4.22 1.74 4.22 4.04 c0 1.62 -1 3.04 -2.48 3.68 z M192.996 19.7 l0 -2.82 c0.24 0.06 0.54 0.12 0.88 0.16 c0.34 0.06 0.7 0.1 1.08 0.12 s0.76 0.04 1.16 0.06 s0.78 0.04 1.12 0.04 c0.94 0 1.6 -0.06 2 -0.16 c0.38 -0.1 0.58 -0.28 0.58 -0.56 c0 -0.24 -0.18 -0.42 -0.36 -0.56 c-0.66 -0.44 -1.44 -0.62 -2.22 -0.8 c-2.2 -0.44 -4.22 -1.32 -4.22 -3.84 c0 -2.98 2.82 -3.68 5.24 -3.68 c1.34 0 2.7 0.14 4 0.46 l0 2.82 c-0.2 -0.06 -0.46 -0.1 -0.78 -0.16 c-0.34 -0.04 -0.68 -0.08 -1.06 -0.12 c-0.78 -0.08 -1.52 -0.12 -2.3 -0.12 c-0.44 0 -1.36 0 -1.78 0.16 c-0.28 0.1 -0.46 0.22 -0.46 0.54 c0 0.16 0.04 0.3 0.12 0.42 c0.08 0.14 0.22 0.24 0.4 0.34 c0.54 0.3 1.24 0.48 1.84 0.62 c0.5 0.12 1 0.26 1.52 0.4 c1.76 0.48 2.92 1.46 2.92 3.34 c0 3.1 -3.08 3.76 -5.56 3.76 c-1.36 0 -2.78 -0.1 -4.12 -0.42 z"></path>
+              </g>
+            </svg>
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                Sites
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="https://flowbite.com/" className="hover:underline">
+                    Home
+                  </a>
                 </li>
                 <li>
-                    <a href="#"  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '18px' }} className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                  <a
+                    href="https://tailwindcss.com/"
+                    className="hover:underline"
+                  >
+                    Shop
+                  </a>
                 </li>
                 <li>
-                    <a href="#"  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '18px' }} className="hover:underline me-4 md:me-6">Licensing</a>
+                  <a
+                    href="https://tailwindcss.com/"
+                    className="hover:underline"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                Follow us
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    className="hover:underline "
+                  >
+                    Github
+                  </a>
                 </li>
                 <li>
-                    <a href="#"  style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '18px' }} className="hover:underline">Contact</a>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    className="hover:underline"
+                  >
+                    Discord
+                  </a>
                 </li>
-            </ul>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                Legal
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">Lada Jewelers™</a>. Dev by Tosi.</span>
-    </div>
-</footer>
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2023{" "}
+            <a href="https://flowbite.com/" className="hover:underline">
+              Flowbite™
+            </a>
+            . All Rights Reserved.
+          </span>
+          <div className="flex mt-4 sm:justify-center sm:mt-0">
+            <a
+              href="#"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  ClipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span className="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  ClipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  ClipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  ClipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-
-  )
-}
-
-export default Footer
+export default Footer;

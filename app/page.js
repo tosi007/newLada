@@ -1,18 +1,14 @@
-import React from 'react'
-import Navbar from './Navbar/page'
-import Footer from './footer/page'
-
+import React from "react";
+import Navbar from "./Navbar/page";
+import Footer from "./footer/page";
+import Dash from "./dash/page";
 
 const page = () => {
   return (
     <div>
-<Navbar/>
-
-
-
-<Footer/>
+      <Dash />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
