@@ -52,25 +52,7 @@ const Admin =() => {
 
   return (
     <>
- <div className="justify-between bg-black flex">
-        <div className="w-2/4 h-[0.1rem] mt-5 rounded-lg bg-[#D7D7DD]"></div>
-        <div className="mt-2 text-center">
-          <Image className="ml-9" src="/logo.png" alt="logo" width={30} height={30} />
-          <div className="flex space-x-1 flex-row">
-            <div style={{ fontFamily: 'Alice', fontWeight: 400 }} className="text-white ml-2">
-              LADA
-            </div>{' '}
-            <div
-              className="text-sm text-white mt-[0.15rem]"
-              style={{ fontFamily: 'Alice', fontWeight: 400, fontSize: '12px' }}
-            >
-              {' '}
-              Jewelers
-            </div>{' '}
-          </div>
-        </div>
-        <div className="w-2/4 h-[0.1rem] mt-5 rounded-lg bg-[#D7D7DD]"></div>
-      </div>
+
   <div className="flex flex-col mt-3 items-center justify-center">
         <h1 className="text-3xl text-white" style={{ fontFamily: 'Montaga', fontWeight: '100' }}>Admin portal for Lada Jewelers</h1>
 
