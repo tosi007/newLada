@@ -9,7 +9,7 @@ const FeedBack = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState("");
 
   const post = async () => {
-    const res = await fetch("http://localhost:5000/api/product/feed", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/feed", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
