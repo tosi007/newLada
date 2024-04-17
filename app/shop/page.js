@@ -11,7 +11,7 @@ const Page = () => {
     setIsOpen(!isOpen);
   };
   const getData = async () => {
-    const res = await fetch("http://localhost:5000/api/product/get", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/get", {
       method: "GET",
     });
     const json = await res.json();
@@ -22,7 +22,7 @@ const Page = () => {
   const handleItemClick1 = async (category) => {
     console.log(category);
     const res = await fetch(
-      `http://localhost:5000/api/product/comes?sort=${category}`,
+      `https://apis-rouge.vercel.app/api/product/comes?sort=${category}`,
       {
         method: "GET",
       }
@@ -37,7 +37,7 @@ const Page = () => {
       window.location.href = "/";
     }
     const res = await fetch(
-      `http://localhost:5000/api/product/come?category=${category}`,
+      `https://apis-rouge.vercel.app/api/product/come?category=${category}`,
       {
         method: "GET",
       }
