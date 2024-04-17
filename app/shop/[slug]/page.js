@@ -19,7 +19,7 @@ const Page = ({ params }) => {
 
   return (
     <>
-      <Navs />
+
       <div className="flex flex-col container mx-auto lg:flex-row">
         <div className="flex flex-col">
           <div>
