@@ -99,7 +99,7 @@ const Slug = () => {
     console.log("Price:", price);
     console.log("Selected State:", selectedState);
 
-    const res = await fetch("http://localhost:5000/api/product/addproduct", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/addproduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -130,7 +130,7 @@ const Slug = () => {
   const [data, setData] = useState("");
 
   const getdata = async () => {
-    const res = await fetch("http://localhost:5000/api/product/get", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/get", {
       method: "GET",
     });
     const json = await res.json();
@@ -143,7 +143,7 @@ const Slug = () => {
     if (shouldDelete) {
       try {
         let res = await fetch(
-          `http://localhost:5000/api/product/delete/${id}`,
+          `https://apis-rouge.vercel.app/api/product/delete/${id}`,
           {
             method: "DELETE",
           }
