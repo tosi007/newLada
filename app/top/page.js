@@ -9,7 +9,7 @@ const Ass = () => {
   const [data, setData] = useState("");
 
   const getData = async () => {
-    const res = await fetch("http://localhost:5000/api/product/gett", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/gett", {
       method: "GET",
     });
     const json = await res.json();
