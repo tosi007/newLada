@@ -11,7 +11,7 @@ const Admin =() => {
           const [password, setPassword] = useState(""); // Use setPassword instead of setpassword
            const router = useRouter()
             const login = async () => {
-          const res = await fetch("http://localhost:5000/api/auth/login", {
+          const res = await fetch("https://apis-rouge.vercel.app/api/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
