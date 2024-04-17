@@ -118,7 +118,7 @@ const postDetails=async()=>{
   }
 
   const getProduct = async()=>{
-let res = await fetch(`http://localhost:5000/api/product/get/${id}`)
+let res = await fetch(`https://apis-rouge.vercel.app//api/product/get/${id}`)
 let data = await res.json()
  setData(data)
 }
@@ -181,7 +181,7 @@ const handleStateChange = (e) => {
       requestBody.Pic3 = url3;
     }
     console.log('Request Body:', requestBody);
-    const res = await fetch(`http://localhost:5000/api/product/update/${id}`, {
+    const res = await fetch(`https://apis-rouge.vercel.app//api/product/update/${id}`, {
       method: "PUT",
       body: JSON.stringify(requestBody),
       headers: {
