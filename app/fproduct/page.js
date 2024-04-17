@@ -66,6 +66,18 @@ const Paage = () => {
       ) : (
         <p>Loading ....</p>
       )}
+        <div className="text-center">
+        {" "}
+        <Link href="/shop">
+          {" "}
+          <button
+            style={{ fontFamily: "Dosis", fontWeight: 600, fontSize: "14px" }}
+            className="border bg-black text-white px-6 py-2"
+          >
+            SHOP ALL PRODUCTS
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
