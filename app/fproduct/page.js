@@ -7,7 +7,7 @@ const Paage = () => {
   const [data, setData] = useState("");
 
   const getData = async () => {
-    const res = await fetch("http://localhost:5000/api/product/getf", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/getf", {
       method: "GET",
     });
     const json = await res.json();
