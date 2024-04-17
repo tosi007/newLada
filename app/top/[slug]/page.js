@@ -8,7 +8,7 @@ const Page = ({ params }) => {
   const id = params.slug;
   const [data, setData] = useState("");
   const get = async () => {
-    let res = await fetch(`http://localhost:5000/api/product/gett/${id}`);
+    let res = await fetch(`https://apis-rouge.vercel.app/api/product/gett/${id}`);
     let data = await res.json();
     setData(data);
     console.log(data);
