@@ -71,7 +71,7 @@ const Page = ({ params }) => {
               </h1>
             </div>
             <div className="my-[0.4rem]">
-              <pstyle={{
+              <p style={{
                   fontFamily: "Dosis",
                   fontWeight: 400,
                   fontSize: "18px",
