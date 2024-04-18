@@ -36,19 +36,19 @@ const Page = ({ params }) => {
         <div className="ml-10">
           <br className="text-black" />
           <h1
-            style={{ fontFamily: "Alice", fontWeight: 400, fontSize: "35px" }}
+            style={{ fontFamily: "Dosis", fontWeight: 400, fontSize: "35px" }}
             className="text-black my-auto md:mt-36 text-3xl"
           >
             {data.name}
           </h1>
           <p
-            style={{ fontFamily: "Alice", fontWeight: 400, fontSize: "20px" }}
+            style={{ fontFamily: "Dosis", fontWeight: 400, fontSize: "20px" }}
             className="text-gray-500 mt-3 text-lg"
           >
             Category : {data.Category}
           </p>
           <p
-            style={{ fontFamily: "Alice", fontWeight: 400, fontSize: "20px" }}
+            style={{ fontFamily: "Dosis", fontWeight: 400, fontSize: "20px" }}
             className="text-black mt-5 text-2xl"
           >
             Rs {data.Price}
@@ -62,7 +62,7 @@ const Page = ({ params }) => {
             <div className="my-[0.4rem]">
               <p
                 style={{
-                  fontFamily: "Alice",
+                  fontFamily: "Dosis",
                   fontWeight: 400,
                   fontSize: "18px",
                 }}
