@@ -85,8 +85,8 @@ const Ass = () => {
             </button>
           </Link>
         </div>
-        <Fass />
-      </div>
+       
+      </div><Fass/>
     </>
   );
 };
