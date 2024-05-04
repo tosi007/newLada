@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       <span
-        className={` absolute top-32 right-3 text-8xl text-slate-100 transition-transform transform ${
+        className={` absolute top-[11rem] right-3 text-8xl text-slate-100 transition-transform transform ${
           isActive ? "translate-x-0" : "translate-x-[50rem]"
         }`}
         style={{ fontFamily: "Dosis", fontWeight: 200, fontSize: "50" }}
