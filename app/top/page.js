@@ -9,7 +9,7 @@ const Ass = () => {
   const [data, setData] = useState("");
 
   const getData = async () => {
-    const res = await fetch("http://localhost:5000/api/product/gett", {
+    const res = await fetch("https://apis-rouge.vercel.app/api/product/gett", {
       method: "GET",
     });
     const json = await res.json();
@@ -20,17 +20,12 @@ const Ass = () => {
     getData();
   }, []);
   return (
-    <>
-      <div
-        style={{ fontFamily: "Dosis", fontWeight: 400, fontSize: "40px" }}
-        className="text-center py-6"
-      >
-        Top Sellers
-      </div>
-      <div
-        style={{ fontFamily: "Dosis", fontWeight: 700, fontSize: "19px" }}
-        className=" grid mx-12 space-x-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
+    <div
+      className="container  mx-auto"
+      style={{ fontFamily: "Dosis", fontWeight: 400, fontSize: "40px" }}
+    >
+      <div className="text-center py-6">Top Sellers</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {Array.isArray(data) ? (
           data.map((item) => (
             <div
@@ -60,14 +55,10 @@ const Ass = () => {
                 PKR, {item.Price}
               </div>
               <div>
-                <Link href={`/fproduct/${item._id}`}>
+                <Link href={`/top/${item._id}`}>
                   <button
-                    style={{
-                      fontFamily: "Dosis",
-                      fontWeight: 200,
-                      fontSize: "20px",
-                    }}
-                    class="border hover:bg-black hover:text-white px-10 py-1 mb-2 ml-2  o"
+                    style={{ fontFamily: "Dosis", fontWeight: 200 }}
+                    class="border hover:bg-black hover:text-white text-base hover:text-lg px-10 py-1 mb-2 ml-2  o"
                   >
                     View
                   </button>
@@ -78,21 +69,21 @@ const Ass = () => {
         ) : (
           <p>Loading ....</p>
         )}
-        <div className="text-center">
-          {" "}
-          <Link href="/shop">
-            {" "}
-            <button
-              style={{ fontFamily: "Dosis", fontWeight: 600, fontSize: "14px" }}
-              className="border bg-black text-white px-6 py-2"
-            >
-              SHOP ALL PRODUCTS
-            </button>
-          </Link>
-        </div>{" "}
-        <Fass />
       </div>
-    </>
+      <div className="text-center">
+        {" "}
+        <Link href="/shop">
+          {" "}
+          <button
+            style={{ fontFamily: "Dosis", fontWeight: 600, fontSize: "14px" }}
+            className="border bg-black text-white px-6 py-2"
+          >
+            SHOP ALL PRODUCTS
+          </button>
+        </Link>
+      </div>
+      <Fass />
+    </div>
   );
 };
 
