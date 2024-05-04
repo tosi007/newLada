@@ -37,11 +37,11 @@ const Hero = () => {
             isActive ? "translate-x-0" : "translate-x-[50rem]"
           }`}
         >
-        <span>Noor💋 Meri💋,</span>
+          <span>Elegance Crafted,</span>
           <br />
-          <span>Jan💋 I💋</span>
+          <span>Dreams Embodied</span>
           <br />
-          <span>Love💋 You💋</span> <br />{" "}
+          <span>in Jewelry</span> <br />{" "}
           <Link href="/shop">
             {" "}
             <button
