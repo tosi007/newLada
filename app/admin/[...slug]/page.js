@@ -182,7 +182,7 @@ const handleStateChange = (e) => {
     
 
 
-        <div className="w-full md:w-1/5 px-3">
+        <div className="w-full  md:w-1/5 px-3">
           <label className="block uppercase tracking-wide text-black text-xs font-bold mb-2" >
          Upload Image
           </label>
@@ -193,7 +193,7 @@ const handleStateChange = (e) => {
             
             onChange={(e)=>{setImage(e.target.files[0])}}
           />
-<button className="text-white border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails()}>upload</button>
+<button className="text-black border border-white my-5 w-20 rounded-lg" onClick={()=>postDetails()}>upload</button>
         </div>
 
 
