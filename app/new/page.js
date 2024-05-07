@@ -69,8 +69,8 @@ const Navs = () => {
                 }`}
               >
                 <svg
-                  width="90"
-                  height="60"
+                  width="100"
+                  height="70"
                   viewBox="0 0 200 124.85486590026754"
                   className="looka-1j8o68f"
                 >
