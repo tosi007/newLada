@@ -34,7 +34,7 @@ const FeedBack = React.forwardRef((props, ref) => {
         ref={ref}
         className="max-w-xl mx-auto mt-16 flex w-full flex-col border rounded-lg bg-white p-8"
       >
-          <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+          <div class=" flex items-center justify-center ">
   <div class="bg-white shadow-md rounded-lg p-6 max-w-sm">
     <h2 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h2>
     <div class="flex items-center mb-3">
