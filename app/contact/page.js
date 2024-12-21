@@ -41,13 +41,13 @@ const FeedBack = React.forwardRef((props, ref) => {
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 7.89a3 3 0 004.24 0L21 10M16 5h2a2 2 0 012 2v2m-4 14H8m4-18a4 4 0 00-4 4v.5M16 5h.5a2.5 2.5 0 01.5 4m-.5-4a2.5 2.5 0 01-.5 4M9 16h6" />
       </svg>
-      <span class="text-gray-700 text-lg">+91-12345-67890</span>
+      <span class="text-gray-700 text-lg">+92-3107684929</span>
     </div>
     <div class="flex items-center">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M16 12l4-4m0 0l-4-4m4 4H8m6 4l-4 4m0 0l4-4m-4 4H8" />
       </svg>
-      <span class="text-gray-700 text-lg">example@example.com</span>
+      <span class="text-gray-700 text-lg">ladajewellers1@gmail.com</span>
     </div>
   </div>
 </div>
